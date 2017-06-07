@@ -2,7 +2,12 @@
 
 ---
 
+// Variables and mixins
 @import "variables";
 @import "mixins";
 
+// Primary override
 @import "base";
+
+//Other SCSS artials
+@import "agencyTheme";

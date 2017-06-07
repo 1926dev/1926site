@@ -61,11 +61,10 @@ DEPENDENCIES
   jekyll (= 3.4.3)
   jekyll-assets
   jekyll-feed (~> 0.6)
-  sass
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.4.1p111
+   ruby 2.4.0p0
 
 BUNDLED WITH
    1.15.1

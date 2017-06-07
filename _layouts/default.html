@@ -7,9 +7,10 @@
   <title>{{ site.title }}</title>
     
   <body>
+    {% include nav.html %}
     {{ content }}
   
-  {% include scripts.html %}
+    {% include scripts.html %}
   </body>
 
 </html>

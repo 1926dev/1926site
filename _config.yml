@@ -24,11 +24,23 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+assets:
+  sources:
+    - assets/javascripts
+    - assets/stylesheets
+  autoprefixer:
+    browsers: ["last 2 versions","> 5%","IE 9"]
+
+sass:
+  sass_dir: assets/stylesheets
+  style: compressed
+
 # Build settings
 markdown: kramdown
-theme: minima
+
 gems:
   - jekyll-feed
+  - jekyll-assets
 exclude:
   - Gemfile
   - Gemfile.lock

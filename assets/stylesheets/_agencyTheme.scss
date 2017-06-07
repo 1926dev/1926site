@@ -255,7 +255,7 @@ section {
       max-width: 400px;
       margin: 0 auto;
       .portfolio-hover {
-        background: fade-out($theme-primary, .9);
+        background: fade-in($theme-primary, .9);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -549,7 +549,7 @@ section#contact {
     border-color: $theme-primary;
     box-shadow: none;
   }
-   ::-webkit-input-placeholder {
+   *::-webkit-input-placeholder {
     @include heading-font;
     font-weight: 700;
     color: $gray-lighter;
@@ -560,7 +560,7 @@ section#contact {
     font-weight: 700;
     color: $gray-lighter;
   }
-   ::-moz-placeholder {
+   *::-moz-placeholder {
     /* Firefox 19+ */
     @include heading-font;
     font-weight: 700;

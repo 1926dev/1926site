@@ -1,0 +1,17 @@
+.navbar-brand {
+    padding: 20px 15px;
+	}
+
+.navbar-custom 
+	.navbar-nav 
+		> .active 
+			> a {
+				border-radius: 0px;
+			}
+
+.navbar-nav 
+		> li 
+			> a {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}

@@ -363,6 +363,7 @@ section {
       }
     }
     .timeline-image {
+      box-shadow: $commonCircleShadow;
       left: 0;
       margin-left: 0;
       width: 80px;
@@ -505,6 +506,7 @@ section {
   img {
     margin: 0 auto;
     border: 7px solid $theme-primary;
+    box-shadow: $commonCircleShadow;
   }
   h4 {
     margin-top: 25px;

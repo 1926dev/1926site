@@ -4,26 +4,20 @@ function pathPrepare($el) {
 	$el.css("stroke-dashoffset", lineLength);
 }
 
-var $word = $("path#word");
-var $dot = $("path#dot");
+var $path = $("path");
 
 // prepare SVG
-pathPrepare($word);
-pathPrepare($dot);
+pathPrepare($path);
 
 // init controller
 var controller = new ScrollMagic.Controller();
 
 // build tween
 var tween = new TimelineMax()
-	.add(TweenMax.to($word, 0.9, {
+	.add(TweenMax.to($path, 1, {
 		strokeDashoffset: 0,
 		ease: Linear.easeNone
-	})) // draw word for 0.9
-	.add(TweenMax.to($dot, 0.1, {
-		strokeDashoffset: 0,
-		ease: Linear.easeNone
-	})) // draw dot for 0.1
+	})) // draw word for 1
 	.add(TweenMax.to("path", 1, {
 		stroke: "#33629c",
 		ease: Linear.easeNone
@@ -32,7 +26,7 @@ var tween = new TimelineMax()
 // build scene
 var scene = new ScrollMagic.Scene({
 		triggerElement: "#trigger1",
-		duration: 200,
+		duration: 600,
 		tweenChanges: true
 	})
 	.setTween(tween)

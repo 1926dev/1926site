@@ -12,13 +12,13 @@ $gray: lighten($gray-base, 33.5%) !default;
 $gray-light: lighten($gray-base, 46.7%) !default;
 $gray-lighter: lighten($gray-base, 93.5%) !default;
 
-$gradientPurplePink: background: #00bbea;
-    background: -moz-linear-gradient(-45deg, #00bbea 0%, #d32576 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#00bbea), color-stop(100%,#d32576));
-    background: -webkit-linear-gradient(-45deg, #00bbea 0%,#d32576 100%);
-    background: -o-linear-gradient(-45deg, #00bbea 0%,#d32576 100%);
-    background: -ms-linear-gradient(-45deg, #00bbea 0%,#d32576 100%);
-    background: linear-gradient(135deg, #00bbea 0%,#d32576 100%);
-    background-color: rgba(0, 0, 0, 0);
+//$gradientPurplePink: background: #00bbea;
+//    background: -moz-linear-gradient(-45deg, #00bbea 0%, #d32576 100%);
+//    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#00bbea), color-stop(100%,#d32576));
+//    background: -webkit-linear-gradient(-45deg, #00bbea 0%,#d32576 100%);
+//    background: -o-linear-gradient(-45deg, #00bbea 0%,#d32576 100%);
+//    background: -ms-linear-gradient(-45deg, #00bbea 0%,#d32576 100%);
+//    background: linear-gradient(135deg, #00bbea 0%,#d32576 100%);
+//    background-color: rgba(0, 0, 0, 0);
 
 // End Variables - Agency Theme

@@ -522,6 +522,12 @@ section#caseStudies {
   padding: 75px;
   img {
     margin: 0 auto;
+		filter: grayscale(100%);
+		transition: 0.2s linear filter;
+		&:hover,
+		&:active {
+			filter: grayscale(0%);
+		}
   }
 }
 

@@ -1,0 +1,12 @@
+.svgCommon {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: $theme-primary-darken;
+  fill: none;
+  stroke-width: 6;
+}
+
+.svgTarget {
+  stroke-dasharray: 4693.2177734375; 
+  stroke-dashoffset: 4693.2177734375;
+}

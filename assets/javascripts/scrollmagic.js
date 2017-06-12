@@ -26,7 +26,7 @@ var tween = new TimelineMax()
 // build scene
 var scene = new ScrollMagic.Scene({
 		triggerElement: "#trigger1",
-		duration: 10000,
+		duration: 2000,
 		tweenChanges: true
 	})
 

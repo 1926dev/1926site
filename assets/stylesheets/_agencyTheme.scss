@@ -523,7 +523,7 @@ section#caseStudies {
   img {
     margin: 0 auto;
 		filter: grayscale(100%);
-		transition: 0.2s linear filter;
+		@include transition(0.2s, linear, filter);
 		&:hover,
 		&:active {
 			filter: grayscale(0%);

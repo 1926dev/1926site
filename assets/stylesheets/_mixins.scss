@@ -13,3 +13,14 @@
 	-o-transition: $time $type $selector;
 	transition: $time $type $selector;
 }
+
+@mixin buttonGradient() {
+	background: $theme-primary;
+	background: -webkit-gradient(linear,left bottom,left top,color-stop(0%,$theme-primary-darken),color-stop(100%,$theme-primary-lighten));
+	background: -webkit-linear-gradient(bottom,$theme-primary-darken 0%,$theme-primary-lighten 100%);
+	background: -moz-linear-gradient(bottom,$theme-primary-darken 0%,$theme-primary-lighten 100%);
+	background: -ms-linear-gradient(bottom,$theme-primary-darken 0%,$theme-primary-lighten 100%);
+	background: -o-linear-gradient(bottom,$theme-primary-darken 0%,$theme-primary-lighten 100%);
+	background: linear-gradient(to top,$theme-primary-darken 0%,$theme-primary-lighten 100%);
+	color: #fff;
+}

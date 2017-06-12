@@ -21,12 +21,12 @@ var tween = new TimelineMax()
 	.add(TweenMax.to("path", 1, {
 		stroke: "",
 		ease: Linear.easeNone
-	}), 0); // change color during the whole thing
+	}), 2); // change color during the whole thing
 
 // build scene
 var scene = new ScrollMagic.Scene({
 		triggerElement: "#trigger1",
-		duration: 20,
+		duration: 2000,
 		tweenChanges: true
 	})
 

@@ -6,3 +6,10 @@
 //    background: -ms-linear-gradient(-45deg, #00bbea 0%,#d32576 100%);
 //    background: linear-gradient(135deg, #00bbea 0%,#d32576 100%);
 //    background-color: rgba(0, 0, 0, 0);
+
+@mixin transition($time, $type, $selector) {
+	-webkit-transition: $time $type $selector;
+	-moz-transition: $time $type $selector;
+	-o-transition: $time $type $selector;
+	transition: $time $type $selector;
+}

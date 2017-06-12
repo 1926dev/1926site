@@ -19,7 +19,7 @@ var tween = new TimelineMax()
 		ease: Linear.easeNone
 	})) // draw word for 1
 	.add(TweenMax.to("path", 1, {
-		stroke: "#33629c",
+		stroke: "",
 		ease: Linear.easeNone
 	}), 2); // change color during the whole thing
 

@@ -291,6 +291,8 @@ section {
       background-color: white;
       text-align: center;
       padding: 25px;
+			border: 2px solid $gray-almost-lighter;
+			border-top: none;
       h4 {
         text-transform: none;
         margin: 0;

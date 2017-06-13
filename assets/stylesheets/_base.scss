@@ -5,6 +5,7 @@
 }
 
 .btn {
+	border: none;
 	background: $theme-primary;
 	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, $theme-primary-darken), color-stop(100%, $theme-primary-lighten));
 	background: -webkit-linear-gradient(bottom, $theme-primary-darken 0%, $theme-primary-lighten 100%);
@@ -13,4 +14,48 @@
 	background: -o-linear-gradient(bottom, $theme-primary-darken 0%, $theme-primary-lighten 100%);
 	background: linear-gradient(to top, $theme-primary-darken 0%, $theme-primary-lighten 100%);
 	color: #fff;
+}
+
+footer {
+	display: flex;
+}
+
+#myCarousel .nav a small {
+	display: block;
+}
+
+#myCarousel .nav {
+	background: #eee;
+}
+
+#myCarousel .nav a {
+	border-radius: 0px;
+}
+
+.carousel-inner>.item>img {
+	width: 100%;
+}
+
+.form-budget-slider {
+	margin-bottom: 3.5rem;
+	color: #FFF;
+}
+
+.budget-slide .slider {
+	margin: 0 1.5rem;
+}
+
+.budget-text {
+	margin-bottom: 0.5rem;
+}
+
+.slider .slider-handle {
+	background-color: $theme-primary;
+	background-image: -webkit-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
+	background-image: -o-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
+	background-image: linear-gradient(to bottom, $theme-primary-lighten 0%, $theme-primary-darken 100%);
+}
+
+.team-desc {
+    margin-top: 5rem;
 }

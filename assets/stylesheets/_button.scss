@@ -1,0 +1,33 @@
+.btn-primary {
+  @include button-variant(white, $theme-primary, $theme-primary);
+  @include heading-font;
+  font-weight: 700;
+}
+
+.btn-xl {
+  @include button-variant(white, $theme-primary, $theme-primary);
+  @include heading-font;
+  font-weight: 700;
+  border-radius: 2px;
+  font-size: 18px;
+  padding: 15px 30px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: none;
+}
+
+.btn {
+	border: none;
+	background: $theme-primary;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, $theme-primary-darken), color-stop(100%, $theme-primary-lighten));
+	background: -webkit-linear-gradient(bottom, $theme-primary-darken 0%, $theme-primary-lighten 100%);
+	background: -moz-linear-gradient(bottom, $theme-primary-darken 0%, $theme-primary-lighten 100%);
+	background: -ms-linear-gradient(bottom, $theme-primary-darken 0%, $theme-primary-lighten 100%);
+	background: -o-linear-gradient(bottom, $theme-primary-darken 0%, $theme-primary-lighten 100%);
+	background: linear-gradient(to top, $theme-primary-darken 0%, $theme-primary-lighten 100%);
+	color: #fff;
+}

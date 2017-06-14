@@ -1,0 +1,28 @@
+section#caseStudies {
+  padding: 75px;
+  img {
+    margin: 0 auto;
+		filter: grayscale(100%);
+		@include transition(0.2s, linear, filter);
+		&:hover,
+		&:active {
+			filter: grayscale(0%);
+		}
+  }
+}
+
+#myCarousel .nav a small {
+	display: block;
+}
+
+#myCarousel .nav {
+	background: #eee;
+}
+
+#myCarousel .nav a {
+	border-radius: 0px;
+}
+
+.carousel-inner>.item>img {
+	width: 100%;
+}

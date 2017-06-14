@@ -4,21 +4,31 @@
 
 // Variables and mixins
 @import "variables";
-@import "agencyThemeMixins";
 @import "mixins";
 
 // Primary override
 @import "base";
 
 // Other SCSS partials
-@import "agencyTheme";
 @import "svgStyling";
-@import "circleButton";
 @import "bootstrapFiveColumns";
+@import "budgetSlider";
 
-// Navbar partial
+// Buttons
+@import "circleButton";
+@import "button";
+@import "socialButtons";
+
+// Navar
 @import "navbar";
 
-@import "team";
-@import "services";
-@import "budgetSlider";
+// Sections
+@import "sectionGlobal";
+@import "sectionHeader";
+@import "sectionServices";
+@import "sectionTeamMembers";
+@import "sectionCaseStudies";
+@import "sectionVlogs";
+@import "sectionBlogs";
+@import "sectionContact";
+@import "sectionFooter";

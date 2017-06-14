@@ -16,3 +16,5 @@ $gray-almost-lighter: lighten($gray-base, 94%) !default;
 $gray-lighter: lighten($gray-base, 98.5%) !default;
 
 $commonCircleShadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.05);
+
+$commonBoxShadow: 2px 2px 8px $gray-base;

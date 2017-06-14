@@ -94,17 +94,23 @@
       margin-bottom: 30px;
     }
     p.item-intro {
-      margin: 20px 0 30px;
+      margin: 5px 0 20px;
       @include serif-font;
       font-style: italic;
       font-size: 16px;
     }
     ul.list-inline {
-      margin-bottom: 30px;
+      margin-bottom: 0px;
       margin-top: 0;
     }
     img {
       margin-bottom: 30px;
+    }
+    iframe {
+      box-shadow: $commonBoxShadow;
+      margin: 0 auto;
+      max-width: 100%;
+//      height: auto;
     }
   }
   .close-modal {

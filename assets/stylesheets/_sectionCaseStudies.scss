@@ -1,34 +1,90 @@
 #caseStudies {
+	padding-bottom: 0;
 	img {
 		margin: 0 auto;
 		filter: grayscale(100%);
 		@include transition(0.2s, linear, filter);
-		&:hover,
-		&:active {
+	}
+	li.active {
+		img {
+			filter: grayscale(0%);
+		}
+	}
+	li {
+		&:hover img,
+		&:active img {
 			filter: grayscale(0%);
 		}
 	}
 }
 
-.carousel-inner > .item > img {
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+	background-color: transparent;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.carousel-inner>.item>img {
 	width: 100%;
 	a {
 		color: $theme-primary;
 	}
 }
 
-#myCarousel .nav a small {
-	display: block;
+#myCarousel .nav-justified {
+	display: inline-flex;
+	justify-content: space-evenly;
 }
 
-#myCarousel .nav {
-	background: #eee;
+#myCarousel .nav-justified>li {
+	display: flex;
+	width: 25%;
+	margin: 0;
+	justify-content: space-evenly;
 }
 
-#myCarousel .nav a {
-	border-radius: 0px;
-}
-
-.carousel-inner>.item>img {
+#myCarousel .nav>li>a {
+	padding: 30px 15px;
 	width: 100%;
+}
+
+#myCarousel .nav-pills>li.active:before {
+	position: absolute;
+	bottom: 0;
+	content: "";
+	width: 0;
+	height: 100%;
+	border-style: solid;
+	border-width: 0 20px 20px 20px;
+	border-color: transparent transparent $theme-primary transparent;
+}
+
+#myCarousel .carousel-inner {
+	border-top: 3px solid $theme-primary;
+}
+
+#myCarousel .nav-pills > li:nth-child(1).active::before {
+	border-color: transparent transparent gold transparent;
+}
+
+#myCarousel .nav-pills li:nth-child(1).active:parent .carousel-inner {
+	border-top: 3px solid yellow;
+}
+
+#myCarousel .nav-pills > li:nth-child(2).active::before {
+	border-color: transparent transparent #0857B7 transparent;	
+}
+
+#myCarousel .nav-pills > li:nth-child(3).active::before {
+	border-color: transparent transparent orange transparent;	
+}
+
+#myCarousel .nav-pills > li:nth-child(4).active::before {
+	border-color: transparent transparent palegreen transparent;	
 }

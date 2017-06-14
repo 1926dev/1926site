@@ -1,15 +1,151 @@
-.team-member-photo img {
-	height: 300px;
-	width: auto;
-	margin-bottom: 20px;
-}
-
-.team-member-info ul {
-	padding: 0;
-	list-style-type: none;
-	text-align: center;
-}
-
-.team-desc {
-    margin-top: 5rem;
+.team-member-overlay {
+  .teamTitle {
+    visibility: hidden;
+    opacity: 0;
+    @include transition(0.25s, linear, opacity);
+  }
+  &:hover {
+    .teamTitle {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  .team-member-info {
+    ul {
+      padding: 0;
+      list-style-type: none;
+      text-align: center;
+    }
+  }
+  .teamMember {
+    width: 215px;
+    height: 308px;
+    display: block;
+    position: relative;
+    .matthewMartin {
+      &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-image: url(../../img/team/team1.jpg);
+        z-index: 2;
+      }
+      &:hover::before {
+        opacity: 0;
+      }
+      &::after {
+        content: "";
+        background: url(../../img/team/team2.jpg);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+    .laurenParker {
+      &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-image: url(../../img/team/team3.jpg);
+        z-index: 2;
+      }
+      &:hover::before {
+        opacity: 0;
+      }
+      &::after {
+        content: "";
+        background: url(../../img/team/team4.jpg);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+    .mollyTurner {
+      &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-image: url(../../img/team/team5.jpg);
+        z-index: 2;
+      }
+      &:hover::before {
+        opacity: 0;
+      }
+      &::after {
+        content: "";
+        background: url(../../img/team/team1.jpg);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+    .andrewKolisz {
+      &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-image: url(../../img/team/team2.jpg);
+        z-index: 2;
+      }
+      &:hover::before {
+        opacity: 0;
+      }
+      &::after {
+        content: "";
+        background: url(../../img/team/team3.jpg);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+    .matthewLong {
+      &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-image: url(../../img/team/team4.jpg);
+        z-index: 2;
+      }
+      &:hover::before {
+        opacity: 0;
+      }
+      &::after {
+        content: "";
+        background: url(../../img/team/team5.jpg);
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+  }
 }

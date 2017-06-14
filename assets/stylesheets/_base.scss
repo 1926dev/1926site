@@ -1,61 +1,78 @@
-.test {
-	h1 {
-		color: #afa;
-	}
+body {
+  overflow-x: hidden;
+  @include body-font;
+  webkit-tap-highlight-color: $theme-primary;
 }
 
-.btn {
-	border: none;
-	background: $theme-primary;
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, $theme-primary-darken), color-stop(100%, $theme-primary-lighten));
-	background: -webkit-linear-gradient(bottom, $theme-primary-darken 0%, $theme-primary-lighten 100%);
-	background: -moz-linear-gradient(bottom, $theme-primary-darken 0%, $theme-primary-lighten 100%);
-	background: -ms-linear-gradient(bottom, $theme-primary-darken 0%, $theme-primary-lighten 100%);
-	background: -o-linear-gradient(bottom, $theme-primary-darken 0%, $theme-primary-lighten 100%);
-	background: linear-gradient(to top, $theme-primary-darken 0%, $theme-primary-lighten 100%);
-	color: #fff;
+.text-muted {
+  color: $gray-light;
 }
 
-footer {
-	display: flex;
+.text-primary {
+  color: $theme-primary;
 }
 
-#myCarousel .nav a small {
-	display: block;
+p {
+  font-size: 14px;
+  line-height: 1.75;
 }
 
-#myCarousel .nav {
-	background: #eee;
+p.large {
+  font-size: 16px;
 }
 
-#myCarousel .nav a {
-	border-radius: 0px;
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+  color: darken($theme-primary, 10%);
 }
 
 .carousel-inner > .item > img {
 	width: 100%;
+a {
+  color: $theme-primary;
 }
 
-.form-budget-slider {
-	margin-bottom: 3.5rem;
-	color: #FFF;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+  font-weight: 700;
 }
 
-.budget-slide .slider {
-	margin: 0 1.5rem;
+// Highlight Color Customization
+::-moz-selection {
+  text-shadow: none;
+  background: $theme-primary;
 }
 
-.budget-text {
-	margin-bottom: 0.5rem;
+::selection {
+  text-shadow: none;
+  background: $theme-primary;
 }
 
-.slider .slider-handle {
-	background-color: $theme-primary;
-	background-image: -webkit-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
-	background-image: -o-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
-	background-image: linear-gradient(to bottom, $theme-primary-lighten 0%, $theme-primary-darken 100%);
+img::selection {
+  background: transparent;
 }
 
-.team-desc {
-    margin-top: 5rem;
+img::-moz-selection {
+  background: transparent;
+}
+
+.img-centered {
+  margin: 0 auto;
+}
+
+.bg-light-gray {
+  background-color: $gray-lighter;
+}
+
+.bg-darkest-gray {
+  background-color: $gray-darker;
 }

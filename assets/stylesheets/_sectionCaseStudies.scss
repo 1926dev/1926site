@@ -1,13 +1,20 @@
-section#caseStudies {
-  img {
-    margin: 0 auto;
+#caseStudies {
+	img {
+		margin: 0 auto;
 		filter: grayscale(100%);
 		@include transition(0.2s, linear, filter);
 		&:hover,
 		&:active {
 			filter: grayscale(0%);
 		}
-  }
+	}
+}
+
+.carousel-inner > .item > img {
+	width: 100%;
+	a {
+		color: $theme-primary;
+	}
 }
 
 #myCarousel .nav a small {

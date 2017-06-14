@@ -1,24 +1,24 @@
-body {
-  overflow-x: hidden;
-  @include body-font;
-  webkit-tap-highlight-color: $theme-primary;
+	body {
+	overflow-x: hidden;
+	@include body-font;
+	webkit-tap-highlight-color: $theme-primary;
 }
 
 .text-muted {
-  color: $gray-light;
+	color: $gray-light;
 }
 
 .text-primary {
-  color: $theme-primary;
+	color: $theme-primary;
 }
 
 p {
-  font-size: 14px;
-  line-height: 1.75;
+	font-size: 14px;
+	line-height: 1.75;
 }
 
 p.large {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 a,
@@ -26,53 +26,40 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  outline: none;
-  color: darken($theme-primary, 10%);
+	outline: none;
+	color: darken($theme-primary, 10%);
 }
 
-.carousel-inner > .item > img {
-	width: 100%;
-a {
-  color: $theme-primary;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include heading-font;
-  font-weight: 700;
-}
-
-// Highlight Color Customization
-::-moz-selection {
-  text-shadow: none;
-  background: $theme-primary;
-}
-
-::selection {
-  text-shadow: none;
-  background: $theme-primary;
-}
-
-img::selection {
-  background: transparent;
-}
-
-img::-moz-selection {
-  background: transparent;
-}
-
-.img-centered {
-  margin: 0 auto;
-}
-
-.bg-light-gray {
-  background-color: $gray-lighter;
-}
-
-.bg-darkest-gray {
-  background-color: $gray-darker;
-}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@include heading-font;
+		font-weight: 700;
+	}
+	// Highlight Color Customization
+	::-moz-selection {
+		text-shadow: none;
+		background: $theme-primary;
+	}
+	::selection {
+		text-shadow: none;
+		background: $theme-primary;
+	}
+	img::selection {
+		background: transparent;
+	}
+	img::-moz-selection {
+		background: transparent;
+	}
+	.img-centered {
+		margin: 0 auto;
+	}
+	.bg-light-gray {
+		background-color: $gray-lighter;
+	}
+	.bg-darkest-gray {
+		background-color: $gray-darker;
+	}

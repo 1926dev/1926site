@@ -50,7 +50,7 @@
 }
 
 #myCarousel .nav>li>a {
-	padding: 30px 15px;
+	padding: 0 15px 30px;
 	width: 100%;
 }
 
@@ -87,4 +87,13 @@
 
 #myCarousel .nav-pills > li:nth-child(4).active::before {
 	border-color: transparent transparent palegreen transparent;	
+}
+
+.carousel-inner {
+	.item {
+	}
+	.col-lg-12 {
+		display: flex;
+		align-items: center;
+	}
 }

@@ -22,6 +22,7 @@
     height: 308px;
     display: block;
     position: relative;
+		margin: 0 auto;
     .matthewMartin {
       &::before {
         content: "";
@@ -31,6 +32,7 @@
         right: 0;
         position: absolute;
         background-image: url(../../img/team/team1.jpg);
+				background-size: 100%;
         z-index: 2;
       }
       &:hover::before {
@@ -39,6 +41,7 @@
       &::after {
         content: "";
         background: url(../../img/team/team2.jpg);
+				background-size: 100%;
         top: 0;
         left: 0;
         bottom: 0;
@@ -56,6 +59,7 @@
         right: 0;
         position: absolute;
         background-image: url(../../img/team/team3.jpg);
+				background-size: 100%;
         z-index: 2;
       }
       &:hover::before {
@@ -64,6 +68,7 @@
       &::after {
         content: "";
         background: url(../../img/team/team4.jpg);
+				background-size: 100%;
         top: 0;
         left: 0;
         bottom: 0;
@@ -81,6 +86,7 @@
         right: 0;
         position: absolute;
         background-image: url(../../img/team/team5.jpg);
+				background-size: 100%;
         z-index: 2;
       }
       &:hover::before {
@@ -89,6 +95,7 @@
       &::after {
         content: "";
         background: url(../../img/team/team1.jpg);
+				background-size: 100%;
         top: 0;
         left: 0;
         bottom: 0;
@@ -106,6 +113,7 @@
         right: 0;
         position: absolute;
         background-image: url(../../img/team/team2.jpg);
+				background-size: 100%;
         z-index: 2;
       }
       &:hover::before {
@@ -114,6 +122,7 @@
       &::after {
         content: "";
         background: url(../../img/team/team3.jpg);
+				background-size: 100%;
         top: 0;
         left: 0;
         bottom: 0;
@@ -131,6 +140,7 @@
         right: 0;
         position: absolute;
         background-image: url(../../img/team/team4.jpg);
+				background-size: 100%;
         z-index: 2;
       }
       &:hover::before {
@@ -139,6 +149,7 @@
       &::after {
         content: "";
         background: url(../../img/team/team5.jpg);
+				background-size: 100%;
         top: 0;
         left: 0;
         bottom: 0;

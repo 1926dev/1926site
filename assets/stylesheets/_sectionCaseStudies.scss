@@ -66,11 +66,11 @@
 }
 
 #myCarousel .carousel-inner {
-	border-top: 3px solid $theme-primary;
+	border-top: 6px solid #FACC00;
 }
 
 #myCarousel .nav-pills > li:nth-child(1).active::before {
-	border-color: transparent transparent gold transparent;
+	border-color: transparent transparent #FACC00 transparent;
 }
 
 #myCarousel .nav-pills li:nth-child(1).active:parent .carousel-inner {
@@ -78,15 +78,19 @@
 }
 
 #myCarousel .nav-pills > li:nth-child(2).active::before {
-	border-color: transparent transparent #0857B7 transparent;	
+	border-color: transparent transparent #685742 transparent;	
 }
 
 #myCarousel .nav-pills > li:nth-child(3).active::before {
-	border-color: transparent transparent orange transparent;	
+	border-color: transparent transparent #E2EDC3 transparent;	
 }
 
 #myCarousel .nav-pills > li:nth-child(4).active::before {
-	border-color: transparent transparent palegreen transparent;	
+	border-color: transparent transparent #138B95 transparent;	
+}
+
+#myCarousel .nav-pills > li:nth-child(5).active::before {
+	border-color: transparent transparent #FAA41A transparent;	
 }
 
 .carousel-inner {

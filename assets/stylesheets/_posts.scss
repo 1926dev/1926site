@@ -1,86 +1,118 @@
 .postImage {
-  img {}
+	img {}
 }
 
 .postContent {
-  p {
-    font-size: 1.4em;
-  }
+	p {
+		font-size: 1.4em;
+	}
 }
 
 .postButtons {
-  width: 100%;
-  background: none;
-  border: 2px solid $theme-primary;
-  border-radius: 4px;
-  font-size: 1.25em;
+	width: 100%;
+	background: none;
+	border: 2px solid $theme-primary;
+	border-radius: 2px;
+	font-size: 1.25em;
+	display: inline-flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	.sidebarButton {
+		display: inline-flex;
+		align-items: center;
+		margin-right: -1rem;
+		transition: 0.25s linear margin-right;
+	}
+	.sidebarButtonArrow {
+		max-height: 2.75rem;
+		display: inline-flex;
+		align-items: center;
+		margin-left: -2.5rem;
+		opacity: 0;
+		visibility: hidden;
+		transition: 0.25s linear margin-left, 0.35s ease-in opacity;
+	}
+	&:hover {
+		.sidebarButton {
+			margin-right: 0;
+		}
+		.sidebarButtonArrow {
+			opacity: 1;
+			visibility: visible;
+			margin-left: 0;
+		}
+	}
 }
 
 .postContact {
-  width: 100%;
-  .section-heading {
-    color: white;
-  }
-  .form-group {
-    margin-bottom: 5px;
-    input,
-    textarea {
-      padding: 10px;
-    }
-    input.form-control {
-      height: auto;
-    }
-    textarea.form-control {
-      height: 323px;
-    }
-  }
-  .form-control:focus {
-    border-color: $theme-primary;
-    box-shadow: none;
-  }
-   ::-webkit-input-placeholder {
-    @include heading-font;
-    font-weight: 700;
-    color: $gray-light;
-  }
-   :-moz-placeholder {
-    /* Firefox 18- */
-    @include heading-font;
-    font-weight: 700;
-    color: $gray-light;
-  }
-   ::-moz-placeholder {
-    /* Firefox 19+ */
-    @include heading-font;
-    font-weight: 700;
-    color: $gray-light;
-  }
-   :-ms-input-placeholder {
-    @include heading-font;
-    font-weight: 700;
-    color: $gray-light;
-  }
-  .text-danger {
-    color: $theme-danger;
-  }
+	width: 100%;
+	.section-heading {
+		color: white;
+	}
+	.form-group {
+		margin-bottom: 5px;
+		input,
+		textarea {
+			padding: 10px;
+		}
+		input.form-control {
+			height: auto;
+		}
+		textarea.form-control {
+			height: 323px;
+		}
+	}
+	.form-control:focus {
+		border-color: $theme-primary;
+		box-shadow: none;
+	}
+	 ::-webkit-input-placeholder {
+		@include heading-font;
+		font-weight: 700;
+		color: $gray-light;
+	}
+	 :-moz-placeholder {
+		/* Firefox 18- */
+		@include heading-font;
+		font-weight: 700;
+		color: $gray-light;
+	}
+	 ::-moz-placeholder {
+		/* Firefox 19+ */
+		@include heading-font;
+		font-weight: 700;
+		color: $gray-light;
+	}
+	 :-ms-input-placeholder {
+		@include heading-font;
+		font-weight: 700;
+		color: $gray-light;
+	}
+	.text-danger {
+		color: $theme-danger;
+	}
 }
 
 .form-budget-slider {
-  margin-bottom: 3.5rem;
-  color: #FFF;
+	margin-bottom: 3.5rem;
+	color: #FFF;
 }
 
 .budget-slide .slider {
-  margin: 0 1.5rem;
+	margin: 0 1.5rem;
 }
 
 .budget-text {
-  margin-bottom: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .slider .slider-handle {
-  background-color: $theme-primary;
-  background-image: -webkit-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
-  background-image: -o-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
-  background-image: linear-gradient(to bottom, $theme-primary-lighten 0%, $theme-primary-darken 100%);
+	background-color: $theme-primary;
+	background-image: -webkit-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
+	background-image: -o-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
+	background-image: linear-gradient(to bottom, $theme-primary-lighten 0%, $theme-primary-darken 100%);
 }

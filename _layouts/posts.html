@@ -20,7 +20,7 @@ layout: default
 
 	<div class="col-md-4">
 
-		<h3>Other posts you may be interested in</h3>
+		<h3>Read more posts...</h3>
 
 		{% for post in site.categories.blog limit:1 %}
 		<a href="{{ site.url }}{{ post.url }}">
@@ -34,7 +34,14 @@ layout: default
     <img class="sidebarButtonArrow" src="{{site.url}}/img/svg/arrows.svg">
     </button>
 
-		<h3>Contact us now!</h3>
+    <h3>...or watch our vlogs...</h3>
+    
+    <button type="submit" class="postButtons">
+			<span class="sidebarButton">See Vlogs Here</span>
+    <img class="sidebarButtonArrow" src="{{site.url}}/img/svg/arrows.svg">
+    </button>
+    
+		<h3>...or contact us now!</h3>
 		<div class="row">
 			<form class="postContact">
 				<div class="col-md-12">
@@ -65,7 +72,7 @@ layout: default
 				<div class="col-lg-12 text-center">
 					<div id="success"></div>
 					<button type="submit" class="postButtons">
-						<span class="sidebarButton">See More Here</span>
+						<span class="sidebarButton">Send Message</span>
     				<img class="sidebarButtonArrow" src="{{site.url}}/img/svg/arrows.svg">
 					</button>
 				</div>

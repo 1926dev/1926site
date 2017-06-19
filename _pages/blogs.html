@@ -1,0 +1,58 @@
+--- 
+layout: default 
+title: blogs 
+permalink: /blogs/ 
+---
+
+<div class="publicaciones-blog-home">
+  <div class="container">
+    <div class="">
+      <h1><span class="colorPrimary">Blogs</span> Archive</h1>
+      <div class="row-page row">
+        
+        {% for post in site.categories.blog limit:1 %}
+        
+        <div class="col-page col-sm-8 col-md-6">
+          <a href="{{site.url}}/{{post.url}}" class="black fondo-publicacion-home">
+            <div class="img-publicacion-principal-home">
+              <img class="" src="https://placeholdit.imgix.net/~text?txtsize=34&txt=&w=500&h=300">
+            </div>
+            <div class="contenido-publicacion-principal-home">
+              <h3>{{post.title}}</h3>
+              <p>{{post.content | strip_html | truncatewords:30}}<span>...</span></p>
+            </div>
+            <div class="mascara-enlace-blog-home">
+              <span>Read More</span>
+            </div>
+          </a>
+        </div>
+        
+        {% endfor %}
+        
+        {% for post in site.categories.blog offset:1 %}
+        
+          <div class="hidden-sm col-page col-sm-4 col-md-3">
+            <a href="{{site.url}}/{{post.url}}" class="fondo-publicacion-home">
+              <div class="img-publicacion-home">
+                <img class="img-responsive" src="https://placeholdit.imgix.net/~text?txtsize=34&txt=&w=500&h=300">
+              </div>
+              <div class="contenido-publicacion-home">
+                <h3>{{post.title}}</h3>
+                <p>{{post.content | strip_html | truncatewords:30}}<span>...</span></p>
+              </div>
+              <div class="mascara-enlace-blog-home">
+                <span>Read More</span>
+              </div>
+            </a>
+          </div>
+
+        {% endfor %}
+
+        <div class="col-page col-sm-4 col-md-3">
+          <a href="{{site.url}}#contact" class="todas-las-publicaciones-home"><span>Life is like a maze in which you try to avoid the exit... Contact us today!</span></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

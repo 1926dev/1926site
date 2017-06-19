@@ -1,0 +1,86 @@
+.postImage {
+  img {}
+}
+
+.postContent {
+  p {
+    font-size: 1.4em;
+  }
+}
+
+.postButtons {
+  width: 100%;
+  background: none;
+  border: 2px solid $theme-primary;
+  border-radius: 4px;
+  font-size: 1.25em;
+}
+
+.postContact {
+  width: 100%;
+  .section-heading {
+    color: white;
+  }
+  .form-group {
+    margin-bottom: 5px;
+    input,
+    textarea {
+      padding: 10px;
+    }
+    input.form-control {
+      height: auto;
+    }
+    textarea.form-control {
+      height: 323px;
+    }
+  }
+  .form-control:focus {
+    border-color: $theme-primary;
+    box-shadow: none;
+  }
+   ::-webkit-input-placeholder {
+    @include heading-font;
+    font-weight: 700;
+    color: $gray-light;
+  }
+   :-moz-placeholder {
+    /* Firefox 18- */
+    @include heading-font;
+    font-weight: 700;
+    color: $gray-light;
+  }
+   ::-moz-placeholder {
+    /* Firefox 19+ */
+    @include heading-font;
+    font-weight: 700;
+    color: $gray-light;
+  }
+   :-ms-input-placeholder {
+    @include heading-font;
+    font-weight: 700;
+    color: $gray-light;
+  }
+  .text-danger {
+    color: $theme-danger;
+  }
+}
+
+.form-budget-slider {
+  margin-bottom: 3.5rem;
+  color: #FFF;
+}
+
+.budget-slide .slider {
+  margin: 0 1.5rem;
+}
+
+.budget-text {
+  margin-bottom: 0.5rem;
+}
+
+.slider .slider-handle {
+  background-color: $theme-primary;
+  background-image: -webkit-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
+  background-image: -o-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
+  background-image: linear-gradient(to bottom, $theme-primary-lighten 0%, $theme-primary-darken 100%);
+}

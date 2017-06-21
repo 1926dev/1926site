@@ -1,7 +1,7 @@
 --- 
 layout: default 
-title: blogs 
-permalink: /blogs/ 
+title: Web Design 
+permalink: /web-design/ 
 ---
 
 <div class="publicaciones-blog-home">
@@ -9,10 +9,10 @@ permalink: /blogs/
 
     {% include breadcrumbs.html %}
 
-    <h1><span class="colorPrimary">Blogs</span> Archive</h1>
+    <h1><span class="colorPrimary">Web Design Blogs</span> Archive</h1>
     <div class="row-page row">
 
-      {% for post in site.posts limit:1 %}
+      {% for post in site.categories.web-design limit:1 %}
 
       <div class="col-page col-sm-8 col-md-6">
         <a href="{{site.url}}{{post.url}}" class="black fondo-publicacion-home">
@@ -31,12 +31,12 @@ permalink: /blogs/
 
       {% endfor %} 
       
-      {% for post in site.posts offset:1 %}
+      {% for post in site.categories.web-design offset:1 %}
 
       <div class="col-page col-sm-4 col-md-3">
         <a href="{{site.url}}{{post.url}}" class="fondo-publicacion-home">
           <div class="img-publicacion-home">
-            <img class="img-responsive img-fluid" src="{{post.images.teaser}}">
+            <img class="img-responsive" src="{{post.images.teaser}}">
           </div>
           <div class="contenido-publicacion-home">
             <h3>{{post.title}}</h3>

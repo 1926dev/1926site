@@ -10,7 +10,7 @@
 			<div class="col-lg-12">
 				<ul class="timeline">
           
-          {% for post in site.categories.blog limit:1 %}
+          {% for post in site.posts limit:1 %}
 					<li>
 						<div class="timeline-image">
 							<img class="img-circle img-responsive" src="img/blogs/1.jpg" alt="">
@@ -29,7 +29,7 @@
 					</li>
           {% endfor %}
           
-          {% for post in site.categories.blog offset:1 limit:1 %}
+          {% for post in site.posts offset:1 limit:1 %}
 					<li class="timeline-inverted">
 						<div class="timeline-image">
 							<img class="img-circle img-responsive" src="img/blogs/2.jpg" alt="">
@@ -48,7 +48,7 @@
 					</li>
           {% endfor %}
           
-          {% for post in site.categories.blog offset:2 limit:1 %}
+          {% for post in site.posts offset:2 limit:1 %}
 					<li>
 						<div class="timeline-image">
 							<img class="img-circle img-responsive" src="img/blogs/3.jpg" alt="">
@@ -67,7 +67,7 @@
 					</li>
           {% endfor %}
           
-          {% for post in site.categories.blog offset:3 limit:1 %}
+          {% for post in site.posts offset:3 limit:1 %}
 					<li class="timeline-inverted">
 						<div class="timeline-image">
 							<img class="img-circle img-responsive" src="img/blogs/4.jpg" alt="">

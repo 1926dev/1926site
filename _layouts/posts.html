@@ -7,7 +7,7 @@ layout: default
 <div class="container-fluid">
 	<div class="postImage">
 		<div class="col-md-10 col-md-offset-1">
-			<img src="{{page.images.header}}" class="img-responsive img-fluid" alt="{{page.title}}" title="{{page.title}}">
+			<img src="{{page.images}}/1600x400" class="img-responsive img-fluid" alt="{{page.title}}" title="{{page.title}}">
 		</div>
 	</div>
 </div>
@@ -28,7 +28,7 @@ layout: default
 
 		{% for post in site.posts limit:1 %}
 		<a href="{{ site.url }}{{ post.url }}">
-			<img src="{{post.images.teaser}}" class="img-responsive img-fluid" alt="{{post.title}}" title="{{post.title}}">
+			<img src="{{post.images}}/700x400" class="img-responsive img-fluid" alt="{{post.title}}" title="{{post.title}}">
 			<h4>{{post.title}}</h4>
 		</a>
 		{% endfor %}

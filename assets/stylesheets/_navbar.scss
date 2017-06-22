@@ -118,10 +118,14 @@ nav {
 		height: auto;
 		svg {
 			max-height: 100%;
-			fill: #FFF;
-			height: 2.5em;
+			fill: #222;
+			height: 3.5em;
 			display: inline-flex;
 			align-items: center;
+			margin-left: 2rem;
+			position: absolute;
+			left: 0;
+			bottom: 0;
 		}
 	}
 }

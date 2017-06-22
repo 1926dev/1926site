@@ -1,0 +1,24 @@
+.breadcrumbs {
+  ol {
+    background: rgba(245, 245, 245, 0);
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  hr {
+    height: 4px;
+    margin-left: 15px;
+    margin-bottom: -3px;
+    background-image: -webkit-linear-gradient(left, $theme-primary-darken, $theme-primary-lighten, rgba(0, 0, 0, 0));
+  }
+  a.agencyLogo {
+    display: inline-block;
+    max-height: 100%;
+    text-decoration: none;
+    svg {
+      max-height: 100%;
+      height: 2.5em;
+      margin-top: .35em;
+    }
+  }
+}

@@ -10,7 +10,11 @@
           </li>
           <li><a href="{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a>
           </li>
-					<li><a class="footer-logo" href="#">{% include /svg/1926agency.html %}</a></li>
+          {% if page.url == "/" %}
+            <li><a class="footer-logo page-scroll" href="#page-top">{% include /svg/1926agency.html %}</a></li>
+          {% else %}
+            <li><a class="footer-logo" href="{{site.url}}">{% include /svg/1926agency.html %}</a></li>
+          {% endif %}
           <li><a href="{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a>
           </li>
           <li><a href="{{site.instagram}}" target="_blank"><i class="fa fa-instagram"></i></a>

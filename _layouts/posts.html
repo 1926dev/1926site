@@ -2,16 +2,20 @@
 layout: default
 ---
 
+
+
 <div class="container-fluid">
 	<div class="postImage">
 		<div class="col-md-10 col-md-offset-1">
-			<img src="{{page.images.header}}" class="img-responsive img-fluid" alt="{{page.title}}" title="{{page.title}}">
+			<img src="{{page.images}}/1600x400" class="img-responsive img-fluid" alt="{{page.title}}" title="{{page.title}}">
 		</div>
 	</div>
 </div>
 
 <div class="container">
 
+  {% include breadcrumbs.html %}
+  
 	<div class="col-md-8">
 		<div class="postContent">
 			{{ content }}
@@ -20,11 +24,11 @@ layout: default
 
 	<div class="col-md-4">
 
-		<h3>Read more posts...</h3>
+		<h3>Read more blogs...</h3>
 
-		{% for post in site.categories.blog limit:1 %}
+		{% for post in site.posts limit:1 %}
 		<a href="{{ site.url }}{{ post.url }}">
-			<img src="{{page.images.teaser}}" class="img-responsive img-fluid" alt="{{post.title}}" title="{{post.title}}">
+			<img src="{{post.images}}/700x400" class="img-responsive img-fluid" alt="{{post.title}}" title="{{post.title}}">
 			<h4>{{post.title}}</h4>
 		</a>
 		{% endfor %}

@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="breadcrumbs">
+    <hr>
+    <ol class="breadcrumb">
+      <a class="agencyLogo" href="{{site.url}}">{% include /svg/1926agency.html %}</a>
+      
+      <li> </li>
+      
+      <li><a href="{{site.url}}/blogs">Blogs</a></li>
+      
+      {% if page.url != "/blogs/" and page.url != "/branding/" and page.url != "/email-campaigns/" and page.url != "/lead-gen/" and page.url != "/seo/" and page.url != "/social-media/" and page.url != "/web-design/" %}
+      
+        <li><a href="{{site.url}}/{{page.categories}}">{{page.categories}}</a></li>
+        <li><a href="#">{{page.title}}</a></li>
+    
+      {% endif %}
+      
+    </ol>
+  </div>
+</div>

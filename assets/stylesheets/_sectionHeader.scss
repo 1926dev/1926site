@@ -3,12 +3,11 @@ header {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  @include background-cover;
   text-align: center;
   color: white;
+  height: 100vh;
   .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 30vh;
     .intro-lead-in {
       @include serif-font;
       font-style: italic;
@@ -29,8 +28,7 @@ header {
 @media(min-width:768px) {
   header {
     .intro-text {
-      padding-top: 20vh;
-      padding-bottom: 25vh;
+      padding-top: 30vh;
       .intro-lead-in {
         @include serif-font;
         font-style: italic;

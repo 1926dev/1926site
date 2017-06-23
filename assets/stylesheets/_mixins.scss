@@ -5,6 +5,13 @@
   transition: $time $type $selector;
 }
 
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 // Mixins - Agency Theme
 @mixin button-variant($color, $background, $border) {
   color: $color;
@@ -54,14 +61,6 @@
     color: $background;
     background-color: $color;
   }
-}
-
-// Background Cover Mixin
-@mixin background-cover {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 
 // Font Mixins

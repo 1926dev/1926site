@@ -16,7 +16,35 @@ footer {
 	.social-buttons {
 		display: inline-flex;
 		li {
+			padding: 0 0.6rem;
 			display: inline-flex;
+			&.instagram {
+				svg {
+					enable-background: new 0 0 512 512;
+					background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+					background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+					background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+					background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+					background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+					border-radius: 1.25rem;
+				}
+			}
+			a {
+				background-color: transparent;
+				border: none;
+				&:hover:not(.footer-logo),
+				&:focus:not(.footer-logo),
+				&:active:not(.footer-logo) {
+					background-color: transparent;
+				}
+				svg {
+					filter: grayscale(100%);
+					transition: 0.15s linear filter;
+					&:hover {
+						filter: grayscale(0);
+					}
+				}
+			}
 			.footer-logo {
 				border-radius: 0;
 				border: none;

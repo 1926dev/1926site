@@ -41,7 +41,7 @@ jQuery(document).ready(function ($) {
 	});
 
 	// When the carousel slides, auto update the text
-	$('#myCarousel').on('slid', function (e) {
+	$('#myCarousel').on('slid.bs.carousel', function (e) {
 		var id = $('.item.active').data('slide-number');
 		$('#carousel-text').html($('#slide-content-' + id).html());
 	});

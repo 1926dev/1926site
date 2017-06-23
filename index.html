@@ -6,6 +6,13 @@ layout: landingPage
 {% include services.html %}
 {% include team.html %}
 {% include carouselPortfolio.html %}
-{% include vlogs.html %}
-{% include blogs.html %}
+
+{% if site.vlogs == true %}
+  {% include vlogs.html %}
+{% endif %}
+
+{% if site.blogs == true %}
+  {% include blogs.html %}
+{% endif %}
+
 {% include contact.html %}

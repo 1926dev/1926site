@@ -1,0 +1,26 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand page-scroll dark-nav-logo" href="{{site.url}}">{% include /svg/1926agency.html %}</a>
+      <button class="btn navbar-btn btn-link pull-right" data-target="#modalNavigation" data-toggle="modal" type="button">
+        <span class="sr-only">Open navigation</span>
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="modal fade modal-fullscreen-menu" id="modalNavigation" role="dialog" tabindex="-1">
+  <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+    <span class="sr-only">Close navigation</span>
+    <span class="glyphicon glyphicon-remove"></span>
+  </button>
+  <div class="modal-dialog">
+    <nav class="list-group">
+      <a class="list-group-item" href="{{site.url}}">Home</a>
+      <a class="list-group-item" href="{{site.url}}/blog">Blogs</a>
+      <a class="list-group-item" href="{{site.url}}#carouselPortfolio">Case Studies</a>
+      <a class="list-group-item" href="#">Careers</a>
+      <a class="list-group-item" href="#">Contact Us</a>
+    </nav>
+  </div>
+</div>

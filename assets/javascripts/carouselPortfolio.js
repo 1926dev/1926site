@@ -12,7 +12,6 @@ $(document).ready(function ($) {
 		var id = id_selector.substr(id_selector.length - 1);
 		var id = parseInt(id);
 		$('#myCarousel').carousel(id);
-//    $('.thumbnail').removeClass('grayscale');
 	});
 
 	// When the carousel slides, auto update the text

@@ -1,5 +1,4 @@
 @media (min-width: 1200px) {
-  
   #carouselPortfolio {
     ul {
       display: inline-flex;
@@ -8,6 +7,10 @@
       list-style-type: none;
       li {
         width: 16.6666666667%;
+//        filter: grayscale(100%);
+//        &.active {
+//          filter: grayscale(0%);
+//        }
         a {
           margin-bottom: 0;
           border-radius: 0px;
@@ -33,6 +36,10 @@
       li {
         width: 48%;
         margin: 0 auto;
+//        filter: grayscale(100%);
+//        &.active {
+//          filter: grayscale(0%);
+//        }
         a {
           margin-bottom: 5px;
           border: 1px solid transparent;

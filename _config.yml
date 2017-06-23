@@ -9,6 +9,9 @@ facebook: https://www.facebook.com/1926digitalagency/
 linkedin: https://www.linkedin.com/in/matthewmartin1926/
 instagram: https://www.instagram.com/1926agency/
 
+vlogs: false
+blogs: false
+
 assets:
   sources:
     - assets/javascripts

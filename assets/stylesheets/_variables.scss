@@ -1,8 +1,8 @@
 // Variables - Agency Theme
 
 $theme-primary: #fc53ac;
-$theme-primary-darken: darken(#fc53ac, 20%);
-$theme-primary-lighten: lighten(#fc53ac, 5%);
+$theme-primary-darken: darken($theme-primary, 20%);
+$theme-primary-lighten: lighten($theme-primary, 5%);
 $theme-danger: #e74c3c;
 $accentPurple: #d32576;
 $accentBlue: #00bbea;

@@ -52,11 +52,18 @@ h6 {
 }
 
 img::selection {
-  background: transparent;
+  background-color: transparent;
 }
 
 img::-moz-selection {
-  background: transparent;
+  background-color: transparent;
+}
+
+img {
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
 }
 
 .img-centered {

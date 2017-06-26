@@ -15,9 +15,16 @@ footer {
 	}
 	.social-buttons {
 		display: inline-flex;
+		justify-content: center;
+		//		align-items: center;
+		width: 100%;
+		flex-wrap: wrap;
 		li {
 			padding: 0 0.6rem;
 			display: inline-flex;
+			width: 14.2857142857%;
+			justify-content: center;
+			align-items: center;
 			&.instagram {
 				svg {
 					enable-background: new 0 0 512 512;
@@ -26,7 +33,7 @@ footer {
 					background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
 					background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
 					background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-					border-radius: 1.25rem;
+					border-radius: 0.75rem;
 				}
 			}
 			a {
@@ -51,7 +58,6 @@ footer {
 				background-color: transparent;
 				display: inline-flex;
 				align-items: center;
-				width: 3.5em;
 				margin: 0 1rem;
 			}
 		}

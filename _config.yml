@@ -3,7 +3,7 @@ email: info@1926agency.com
 description: > # this means to ignore newlines until "baseurl:"
   A premier digital agency helping business' to increase efficiency and expand nationwide.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "new.1926.social" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter: http://www.twitter.com/1926marketing
 facebook: https://www.facebook.com/1926digitalagency/
 linkedin: https://www.linkedin.com/in/matthewmartin1926/

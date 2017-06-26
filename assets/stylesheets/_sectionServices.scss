@@ -1,13 +1,17 @@
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
-}
-
-#services
-.services-col {
+#services {
+  .services-col {
     margin: 2rem 0;
-			svg {
-				height: 120px;
-				margin-bottom: 15px;
-	}
+    svg {
+      height: 120px;
+      margin-bottom: 15px;
+    }
+    h4 {
+      margin: 15px 0;
+      text-transform: none;
+    }
+    p {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
 }

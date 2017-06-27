@@ -1,63 +1,61 @@
 footer {
-  display: flex;
-  padding: 25px 0;
-  text-align: center;
-  span.copyright {
-    line-height: 40px;
-    @include heading-font;
-    text-transform: none;
-  }
-  .socialButtons {
-    display: inline-flex;
-    justify-content: center;
-    width: 33.33%;
-    margin: 12px 0;
-    flex-wrap: wrap;
-    padding: 0;
-    li {
-      padding: 0 0.6rem;
-      display: inline-flex;
-      width: 16.6666666667%;
-      justify-content: center;
-      align-items: center;
-      list-style: none;
-      margin: 0;
-      &.instagram {
-        svg {
-          enable-background: new 0 0 512 512;
-          background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-          background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-          background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-          background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-          background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
-          border-radius: 1.35rem;
-        }
-      }
-      a {
-        background-color: transparent;
-        border: none;
-        &:hover:not(.footer-logo),
-        &:focus:not(.footer-logo),
-        &:active:not(.footer-logo) {
-          background-color: transparent;
-        }
-        svg {
-          filter: grayscale(100%);
-          @include transition(0.25s, linear, filter);
-          &:hover {
-            filter: grayscale(0);
-          }
-        }
-        .footer-logo {
-          border-radius: 0;
-          border: none;
-          background-color: transparent;
-          display: inline-flex;
-          align-items: center;
-          margin: 0 1rem;
-          max-width: 2rem;
-        }
-      }
-    }
-  }
+	display: flex;
+	padding: 25px 0;
+	text-align: center;
+	span.copyright {
+		line-height: 40px;
+		@include heading-font;
+		text-transform: none;
+	}
+	.socialButtons {
+		display: inline-flex;
+		justify-content: center;
+		width: 100%;
+		margin: 0;
+		flex-wrap: wrap;
+		padding: 0;
+		li {
+			padding: 0 0.6rem;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			margin: 0;
+			&.instagram {
+				svg {
+					enable-background: new 0 0 512 512;
+					background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+					background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+					background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+					background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+					background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+					border-radius: 0.8rem;
+				}
+			}
+			a {
+				background-color: transparent;
+				border: none;
+				&:hover:not(.footer-logo),
+				&:focus:not(.footer-logo),
+				&:active:not(.footer-logo) {
+					background-color: transparent;
+				}
+				svg {
+					&:not(.agency-footer-logo) {
+						filter: grayscale(100%);
+						@include transition(0.25s, linear, filter);
+						height: 3.25rem;
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+				}
+				&.footer-logo {
+					svg {
+						width: 10rem;
+					}
+				}
+			}
+		}
+	}
 }

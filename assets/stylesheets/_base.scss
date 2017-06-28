@@ -1,6 +1,11 @@
+html {
+  font-size: 10px;
+}
+
 body {
   overflow-x: hidden;
-  @include body-font;
+  @include rem(font-size, 1.7rem);
+//  @include rem(padding, 20px 10px);
   webkit-tap-highlight-color: $theme-primary;
 }
 
@@ -13,12 +18,11 @@ body {
 }
 
 p {
-  font-size: 14px;
   line-height: 1.75;
 }
 
 p.large {
-  font-size: 16px;
+//  font-size: 16px;
 }
 
 a,

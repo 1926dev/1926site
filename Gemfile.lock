@@ -65,6 +65,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-feed (~> 0.6)
   jekyll-sitemap
+  rack
   tzinfo-data
 
 RUBY VERSION

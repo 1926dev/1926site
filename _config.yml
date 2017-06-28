@@ -29,6 +29,7 @@ markdown: kramdown
 gems:
   - jekyll-feed
   - jekyll-assets
+  - jekyll-sitemap
 
 include:
   - _pages

@@ -1,1 +1,1 @@
-run proc { [ 200, {}, ["Hello World!"]] }
+run proc { [ 200, {}, [/_site]] }

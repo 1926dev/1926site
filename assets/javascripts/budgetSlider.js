@@ -1,1 +1,3 @@
-var slider = new Slider('#ex2', {});
+$(document).ready(function () {
+  var slider = new Slider('#ex2', {});
+});

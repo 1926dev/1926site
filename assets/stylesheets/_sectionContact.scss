@@ -26,24 +26,24 @@ section#contact {
 	 ::-webkit-input-placeholder {
 		@include heading-font;
 		font-weight: 700;
-		color: $gray-lighter;
+		color: $gray-darker;
 	}
 	 :-moz-placeholder {
 		/* Firefox 18- */
 		@include heading-font;
 		font-weight: 700;
-		color: $gray-lighter;
+		color: $gray-darker;
 	}
 	 ::-moz-placeholder {
 		/* Firefox 19+ */
 		@include heading-font;
 		font-weight: 700;
-		color: $gray-lighter;
+		color: $gray-darker;
 	}
 	 :-ms-input-placeholder {
 		@include heading-font;
 		font-weight: 700;
-		color: $gray-lighter;
+		color: $gray-darker;
 	}
 	.text-danger {
 		color: $theme-danger;
@@ -68,8 +68,4 @@ section#contact {
 	background-image: -webkit-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
 	background-image: -o-linear-gradient(top, $theme-primary-lighten 0%, $theme-primary-darken 100%);
 	background-image: linear-gradient(to bottom, $theme-primary-lighten 0%, $theme-primary-darken 100%);
-}
-
-section#contact *::-moz-placeholder {
-	color: #999;
 }
